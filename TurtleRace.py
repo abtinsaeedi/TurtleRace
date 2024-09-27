@@ -1,7 +1,7 @@
 """
-Version 2
+Version 3
 
-In this version the turtle race program is organized using multiple functions
+In this version the turtle race program is organized using modules
 """
 
 #Design Plan
