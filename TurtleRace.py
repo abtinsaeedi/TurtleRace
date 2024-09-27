@@ -13,57 +13,57 @@ raceTrack = turtle.Screen()
 raceTrack.bgcolor('lightgreen')
 
 #Create the racers
-larry = turtle.Turtle()
-larry.shape("turtle")
-larry.color("darkgreen")
-larry.turtlesize(3, 3, 1)
-larry.penup()
+leo = turtle.Turtle()
+leo.shape("turtle")
+leo.color("darkgreen")
+leo.turtlesize(3, 3, 1)
+leo.penup()
 
-curly = turtle.Turtle()
-curly.shape("turtle")
-curly.color("darkred")
-curly.turtlesize(3, 3, 1)
-curly.penup()
+mikey = turtle.Turtle()
+mikey.shape("turtle")
+mikey.color("darkred")
+mikey.turtlesize(3, 3, 1)
+mikey.penup()
 
-moe = turtle.Turtle()
-moe.shape("turtle")
-moe.color("blue")
-moe.turtlesize(3, 3, 1)
-moe.penup()
+don = turtle.Turtle()
+don.shape("turtle")
+don.color("blue")
+don.turtlesize(3, 3, 1)
+don.penup()
 
 #Position racers on starting line
 # Position racers on starting line, 200 pixels apart sideways
     #use penup in initialization of turtles to not draw lines while they lineup
 
 
-larry.left(180) #turns larry all the way to the left 
-larry.forward(200) #makes larry go forward 200 pixels
-curly.left(90) #turns curly upright
-moe.forward(200) #moves curly to the right 200 pixels, no need to turn as hes already facing to the right
+leo.left(180) #turns larry all the way to the left 
+leo.forward(200) #makes larry go forward 200 pixels
+mikey.left(90) #turns curly upright
+don.forward(200) #moves curly to the right 200 pixels, no need to turn as hes already facing to the right
  #now ill make them upright
-moe.left(90)
-larry.right(90)
+don.left(90)
+leo.right(90)
 
 #now use pendown to put the linesback
-larry.pendown()
-curly.pendown()
-moe.pendown()
+leo.pendown()
+mikey.pendown()
+don.pendown()
 
 #Run race
 dist = random.randint(10,100)
-larry.forward(dist)
+leo.forward(dist)
 
 dist = random.randint(10,100)
-curly.forward(dist)
+mikey.forward(dist)
 
 dist = random.randint(10,100)
-moe.forward(dist)
+don.forward(dist)
 
 #Determine winner
 #user branching to determine which turtle advanced the most
-winnner = moe
+winnner = don
 
 #Let user know who winner is
-messagebox.showinfo("Tutle Race ", "Moe")
+messagebox.showinfo("Tutle Race ", "Mikey")
 #Waity for user confirmation to close program
 raceTrack.exitonclick()
